@@ -101,6 +101,6 @@
   "exclude": [
     "ignored_folder/*"
   ],
-  "include": ["interfaces"],
+  "include": ["namespaces"],
 
 }

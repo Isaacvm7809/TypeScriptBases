@@ -1,39 +1,12 @@
 "use strict";
-(() => {
-    let flash = {
-        name: 'Barry Allen',
-        age: 44,
-        poderes: ['Super velocidad', 'Viajar en el tiempo'],
+var Validations;
+(function (Validations) {
+    Validations.validateText = (cadena) => {
+        return (cadena.length > 3) ? true : false;
     };
-    let superMan = {
-        name: 'Clark Kent',
-        age: 60,
-        poderes: ['Super velocidad', 'Volar'],
-        getName: function () {
-            return this.name;
-        }
+    const validateDate = (fecha) => {
+        return (isNaN(fecha.valueOf())) ? true : false;
     };
-})();
-(() => {
-    class Mutant {
-        getMethod(id) {
-            throw new Error("Method not implemented.");
-        }
-    }
-})();
-(() => {
-    const client = {
-        name: 'Isaac',
-        age: 44
-    };
-    const client2 = {
-        name: 'Sofia',
-        age: 19,
-        address: {
-            id: 1,
-            zip: 29000,
-            desc: 'Tuxtla'
-        }
-    };
-})();
+    console.log(Validations.validateText('Isaac'));
+})(Validations || (Validations = {}));
 //# sourceMappingURL=main.js.map
